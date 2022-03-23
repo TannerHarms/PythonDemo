@@ -1,0 +1,77 @@
+\documentclass[12pt, letterpaper, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\graphicspath{{FIGS/}}
+
+\title{McKeon Group Python Demo}
+\author{Tanner Harms}
+\date{March 2022}
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+
+\section{Introduction}
+The purpose of this document is merely to show how figures can be quickly and easily integrated into Latex using VSCode.  Below are some figures that were generated using the \texttt{CylinderPOD.py} file.
+
+\section{POD Results---Cylinder Flow}
+
+\subsection{Modal Energies}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Cumulative_Energy.eps}
+    \caption{Cumulative Energy of the POD modes}
+    \label{cum_en}
+\end{figure}
+
+\subsection{Spatial Modes}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Mode0.eps}
+    \caption{First Mode}
+    \label{mode0}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Mode1.eps}
+    \caption{Second Mode}
+    \label{mode1}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Mode2.eps}
+    \caption{Third Mode}
+    \label{mode2}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Mode3.eps}
+    \caption{Fourth Mode}
+    \label{mode3}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Mode4.eps}
+    \caption{Fifth Mode}
+    \label{mode4}
+\end{figure}
+
+
+\subsection{Time-Varying Coefficients}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{TVC_1through5.eps}
+    \caption{First five time-varying coefficients}
+    \label{tvc}
+\end{figure}
+
+\end{document}
